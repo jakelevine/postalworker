@@ -11,7 +11,6 @@ class NewslettersController < ApplicationController
 
 	def new
 		@newsletter = Newsletter.new
-
 	end
 
 	def edit

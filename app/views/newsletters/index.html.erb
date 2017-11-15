@@ -12,7 +12,7 @@
     <tr>
       <td><%= newsletter.name %></td>
       <td><%= newsletter.category %></td>
-      <td><%= link_to 'Link', newsletter.url %></td>
+      <td><%= link_to 'Home', newsletter.url %></td>
       <td><%= link_to 'Show', newsletter_path(newsletter) %></td>
       <td><%= link_to 'Edit', edit_newsletter_path(newsletter) %></td>
        <td><%= link_to 'Destroy', newsletter_path(newsletter),
@@ -21,4 +21,5 @@
 
     </tr>
   <% end %>
+  <%= link_to 'Add a Newsletter', '/newsletters/new' %>
 </table>
