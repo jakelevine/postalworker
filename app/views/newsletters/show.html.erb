@@ -1,0 +1,18 @@
+
+<h1>Listing newsletters</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Homepage</th>
+  </tr>
+  
+    <tr>
+      <td><%= @newsletter.name %></td>
+      <td><%= @newsletter.category %></td>
+      <td><%= link_to 'Link', @newsletter.url %></td>
+    </tr>
+</table>
+
+<%= link_to 'Back', newsletters_path %>
